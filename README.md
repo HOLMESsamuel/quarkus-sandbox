@@ -1,4 +1,6 @@
-# quarkus-sandbox Project
+# quarkus-sandbox
+
+A basic quarkus application with implemented most used functionalities to practice quarkus skills, generated with https://code.quarkus.io/
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
