@@ -48,7 +48,8 @@ public class CatController {
 	}
 
 	@DELETE
-	public void deleteCat(String name) {
+	@Path("/{name}")
+	public void deleteCat(@PathParam("name") String name) {
 		catService.deleteCat(name);
 	}
 

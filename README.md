@@ -6,6 +6,15 @@ This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
+Warning ! it uses port 5050
+
+## What is implemented
+* A basic REST CRUD service based on Cat entity, a controller, repository and service
+* Hibernate persistence based on hibernate with panache library
+* Consumption of REST API that send cat fun facts (see FunFActService and its usage in CatController)
+* Integration test and REST endpoint test with rest assured library
+* OpenAPI and swagger ui available on http://localhost:5050/q/dev/
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
