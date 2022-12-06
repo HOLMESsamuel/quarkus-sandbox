@@ -1,29 +1,32 @@
 package entity;
 
+import lombok.*;
 
-public class Cat {
+import javax.persistence.*;
+
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Table(name = "CAT")
+public class Cat{
+	@Id
+	@GeneratedValue
+	@Column(name = "ID")
+	private Long id;
+
+	@Column(name = "NAME")
 	private String name;
 
-	public Cat(String name, String age) {
-		this.name = name;
-		this.age = age;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getAge() {
-		return age;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public void setAge(String age) {
-		this.age = age;
-	}
-
+	@Column(name = "AGE")
 	private String age;
+
+	public String getName()  {
+		return this.name;
+	}
+
+	public String getAge()  {
+		return this.age;
+	}
+
 }
