@@ -14,6 +14,7 @@ Warning ! it uses port 5050
 * Consumption of REST API that send cat fun facts (see FunFActService and its usage in CatController)
 * Integration test and REST endpoint test with rest assured library
 * OpenAPI and swagger ui available on http://localhost:5050/q/dev/
+* opentracing, tracing of one CatService method and all funFactService methods with @Traced annotation
 
 ## Running the application in dev mode
 

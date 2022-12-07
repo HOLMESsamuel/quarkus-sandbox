@@ -1,6 +1,8 @@
 package service;
 
 import entity.Cat;
+import org.eclipse.microprofile.opentracing.Traced;
+import org.jboss.logging.Logger;
 import repository.CatRepository;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -10,10 +12,14 @@ import java.util.List;
 @ApplicationScoped
 public class CatService {
 
+	//opentracing log
+	private static final Logger LOG = Logger.getLogger(CatService.class);
+
 	@Inject
 	CatRepository catRepository;
 
 	public List<Cat> getCat() {
+		LOG.info("searching cats");
 		return catRepository.listAll();
 	}
 

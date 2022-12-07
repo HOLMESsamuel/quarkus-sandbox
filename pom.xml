@@ -57,6 +57,11 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-spring-boot-properties</artifactId>
     </dependency>
+    <!--    permet de tracer les appels REST-->
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-smallrye-opentracing</artifactId>
+    </dependency>
 <!--    -->
 
     <dependency>
